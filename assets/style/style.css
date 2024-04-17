@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: inherit;
+  list-style: none;
+}
+
+body {
+  background-color: #212121;
+  color: #ececec;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #171717;
+  padding: 8px 2rem;
+}
+
+header nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+a:hover {
+  color: #008170;
+  transition-duration: 300ms;
+}
+
+main {
+  display: flex;
+  min-height: 100vh;
+}
+
+#content {
+  width: 70%;
+  padding: 2rem;
+}
+
+aside {
+  width: 30%;
+  background-color: #171717;
+  padding: 2rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #171717;
+}
+
+footer p {
+  font-size: small;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s ease;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.items img {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  max-height: 100%;
+  min-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: inherit;
+  font-size: xx-large;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.prev {
+  left: 2rem;
+  animation: bouncePrev 1s infinite;
+}
+
+.next {
+  right: 2rem;
+  animation: bounceNext 1s infinite;
+}
+
+@keyframes bounceNext {
+  0%,
+  100% {
+    transform: translateX(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateX(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+@keyframes bouncePrev {
+  0%,
+  100% {
+    transform: translateX(25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateX(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}

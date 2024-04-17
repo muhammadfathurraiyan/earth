@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dasar Pemograman Web</title>
+    <link rel="stylesheet" href="./assets/style/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>🌍Earth</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/article">Article</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="slider-container">
+        <div class="slider">
+          <div class="items">
+            <h2>Jelajahi Wisata Laut Tropis Indonesia</h2>
+            <img src="./assets/img/bg1.jpg" alt="Laut Indonesia" />
+          </div>
+          <div class="items">
+            <h2>Berpetualangan di Piramida Mesir Kuno</h2>
+            <img src="./assets/img/bg3.webp" alt="Piramida Mesir" />
+          </div>
+          <div class="items">
+            <h2>Mencari Pengalaman di Hutan Amazon</h2>
+            <img src="./assets/img/bg2.webp" alt="Hutan Amazon" />
+          </div>
+        </div>
+        <button class="prev" onclick="moveSlider(-1)">👈</button>
+        <button class="next" onclick="moveSlider(1)">👉</button>
+      </div>
+    </main>
+    <footer>
+      <p>
+        &copy; Earth 2024. Site design with 💙 by:
+        <a href="https://muhammadfathurraiyan.site" target="_blank">raiyan</a>
+      </p>
+    </footer>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
