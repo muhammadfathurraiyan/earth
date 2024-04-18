@@ -111,6 +111,10 @@ footer p {
   color: #ececec;
 }
 
+.items h2 {
+  font-size: xx-large;
+}
+
 .items img {
   position: absolute;
   top: 0;
