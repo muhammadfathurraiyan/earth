@@ -16,9 +16,16 @@ function showSlides(n) {
   }
 
   for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+    slides[i].classList.remove("active");
   }
 
-  slides[slideIndex].style.display = "flex";
+  slides[slideIndex].classList.add("active");
 }
 showSlides(slideIndex);
+
+// dropdown
+
+function toggleDropdown() {
+  let dropdown = document.getElementById("myDropdown");
+  dropdown.classList.toggle("show");
+}
