@@ -225,3 +225,45 @@ aside ul li {
 #tentang section p {
   text-align: center;
 }
+
+@media screen and (max-width: 1024px) {
+  header {
+    padding: 8px 1rem;
+  }
+
+  header nav ul {
+    display: flex;
+    gap: 14px;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  aside {
+    order: -1;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  #content {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  #content {
+    width: 100%;
+  }
+
+  #tentang section {
+    width: 100%;
+  }
+
+  aside {
+    width: 100%;
+  }
+
+  #tentang section {
+    width: 100%;
+  }
+}
